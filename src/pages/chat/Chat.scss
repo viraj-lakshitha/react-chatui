@@ -1,0 +1,38 @@
+.chat-screen {
+    border            : .5px solid #757575;
+    height            : 100vh !important;
+    -ms-overflow-style: none;
+    scrollbar-width   : none;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    &-messages {
+        overflow-y      : auto;
+        background-color: #e4e4e4;
+        height          : 100% !important;
+        border-radius: 0 0 1em 1em;
+    }
+
+    &-engage {
+        height    : 3em !important;
+        min-height: 3em !important;
+
+        &-input {
+            width        : calc(100% - 3em) !important;
+            border-radius: 1em;
+            border       : 1px solid #9f9f9f;
+            height       : 80% !important;
+            min-height   : 80% !important;
+        }
+
+        &-submit {
+            border-radius: 50% !important;
+            height       : 80% !important;
+            min-height   : 80% !important;
+            width        : 2.5em !important;
+            border       : none;
+        }
+    }
+}
